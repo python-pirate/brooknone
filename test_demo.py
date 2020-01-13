@@ -9,3 +9,4 @@ def test_max_min():
     bmax = max_min(arr)
     for x in arr:
         assert(bmax >= x)
+        
