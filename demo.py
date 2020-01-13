@@ -1,11 +1,11 @@
 import random
 
 def max_min(ar):
-    y = 0
-    bmax = ar[0]
-    while y < len(ar):
-        if bmax < ar[y]:
-            bmax = ar[y]
-        y += 1
+    i = 0
+    m = 0
+    while i < len(ar):
+        if ar[m] < ar[i]:
+            m = i
+        i += 1
 
-    return bmax
+    return ar[m]
